@@ -29,4 +29,3 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/node-express-app:latest,${{ secrets.DOCKERHUB_USERNAME }}/node-express-app:${{ github.sha }}
-          # optional: platforms: linux/amd64,linux/arm64  # if you need multi-arch
